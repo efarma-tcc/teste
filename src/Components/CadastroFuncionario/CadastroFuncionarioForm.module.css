@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
+
+.formcontainerF{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8 px;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 16px;
+
+  }  
+
+.formrow{
+    display: flex;
+    gap: 20px;
+}
+
+.containerTitulo{
+    text-align: center;
+}
+
+.select{
+  border: 1px, solid #eee;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background: #eee;
+  transition: 0.2s;
+  flex: 1;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.select:focus,
+.select:hover{
+  outline: none;
+  border-color: #00ACAC;
+  background: white;
+  box-shadow: 0 0 0 1px #00cccc;
+}
