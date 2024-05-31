@@ -1,0 +1,18 @@
+.containerTituloR{
+    text-align: center;
+}
+
+.formcontainerR{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8 px;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.formrowR{
+    display: flex;
+    gap: 145px;
+}

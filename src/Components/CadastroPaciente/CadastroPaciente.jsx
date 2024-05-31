@@ -7,7 +7,6 @@ const CadastroPaciente = () => {
   return (
     <section className={styles.cadastropaciente}>
         <div>
-            <Sidebar/>
             <Routes className={styles.formpaciente}>
                 <Route path="/" element={<CadastroPacienteForm />}></Route>
             </Routes>
@@ -17,8 +16,3 @@ const CadastroPaciente = () => {
 }
 
 export default CadastroPaciente
-
-
-
-
-
