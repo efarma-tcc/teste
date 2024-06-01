@@ -1,0 +1,9 @@
+.modals{
+    display: flex;
+    align-items: center;
+    background-color: #00ACAC;
+    width: auto;
+    height: 5rem;
+    margin: auto 2rem;
+    border-radius: 5px;
+}
