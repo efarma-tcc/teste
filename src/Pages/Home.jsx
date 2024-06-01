@@ -10,28 +10,47 @@ export default function Page1(){
         <div className="flex mx-auto space-y-4 w-full">
             <SidebarMenu/>
             <div className="block w-full">
-                    <Tabs defaultValue='paciente' className='ml-5'>
-                        <ModalPages>
-                            <TabsList className='ml-6 p-6'>
-                                <TabsTrigger value="paciente">Pacientes</TabsTrigger>
-                                <TabsTrigger value="funcionarios">Funcionarios</TabsTrigger>
-                                <TabsTrigger value="listaPessoas">Lista</TabsTrigger>
-                            </TabsList>
-                        </ModalPages>
+                <h1>TSTE</h1>
+                <Tabs defaultValue='paciente' className='ml-5'>
+                    <TabsList className='ml-6 p-6'>
+                        <TabsTrigger value="paciente">Pacientes</TabsTrigger>
+                        <TabsTrigger value="funcionarios">Funcionarios</TabsTrigger>
+                        <TabsTrigger value="listaPessoas">Lista</TabsTrigger>
+                    </TabsList>
 
-                        <TabsContent value='paciente'>
-                            <CadastroPaciente/>
-                        </TabsContent>
-                        <TabsContent value='funcionarios'>
-                            <CadastroFuncionario/>
-                        </TabsContent>
-                        <TabsContent value='listaPessoas'>
-                            <h1>CODIGO DO listaPessoas</h1>
-                        </TabsContent>
+                    <TabsContent value='paciente'>
+                        <CadastroPaciente/>
+                    </TabsContent>
+                    <TabsContent value='funcionarios'>
+                        <CadastroFuncionario/>
+                    </TabsContent>
+                    <TabsContent value='listaPessoas'>
+                        <h1>CODIGO DO listaPessoas</h1>
+                    </TabsContent>
 
-
-                    </Tabs>
+                </Tabs>
             </div>
         </div>
     )
 }
+// <Tabs defaultValue='paciente' className='ml-5'>
+//     <ModalPages>
+//         <TabsList className='ml-6 p-6'>
+//             <TabsTrigger value="paciente">Pacientes</TabsTrigger>
+//             <TabsTrigger value="funcionarios">Funcionarios</TabsTrigger>
+//             <TabsTrigger value="listaPessoas">Lista</TabsTrigger>
+//         </TabsList>
+//     </ModalPages>
+
+//     <TabsContent value='paciente'>
+//         <CadastroPaciente/>
+//     </TabsContent>
+//     <TabsContent value='funcionarios'>
+//         <CadastroFuncionario/>
+//     </TabsContent>
+//     <TabsContent value='listaPessoas'>
+//         <h1>CODIGO DO listaPessoas</h1>
+//     </TabsContent>
+
+
+// </Tabs>
