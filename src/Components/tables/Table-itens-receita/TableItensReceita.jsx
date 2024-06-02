@@ -66,7 +66,6 @@ export default function TableItensReceita(){
                 </Table>
             </div>
 
-            
         </div>
     )
 }
