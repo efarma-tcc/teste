@@ -37,7 +37,7 @@ export default function MenuList() {
       <Link to="/estoque">Estoque</Link>
       </MenuItem>
       <MenuItem key="configuracoes" icon={<SettingOutlined />}>
-        Configurações
+        Sair
       </MenuItem>
     </Menu>
   );

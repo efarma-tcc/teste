@@ -1,5 +1,5 @@
+import Input3 from "@/Components/Forms/Input3";
 import { Button } from "../../ui/button";
-import { Input } from "../../ui/input";
 import { Search } from "lucide-react";
 
 
@@ -7,8 +7,8 @@ export default function FiltrosItensEstoque() {
 
     return(
         <form className="flex items-center gap-2">
-            <Input placeholder="CPF" id="id"/>
-            <Input placeholder="Nome" id="name"/>
+            <Input3 label="ID Remédio:" id="id"/>
+            <Input3 label="Nome Remédio:" id="name"/>
             <Button type="submit" variant="secondary" >
               <Search className="w-4 h-4 mr-2"/>
               Filtrar Resultados

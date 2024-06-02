@@ -1,5 +1,6 @@
 import TableCadastros from "@/Components/tables/Table-cadastros/TableCadastros"
 import SidebarMenu from "../Components/Sidebar/index"
+import styles from './Home.module.css';
 
 
 export default function Page1(){
@@ -7,8 +8,8 @@ export default function Page1(){
         <div className="flex mx-auto space-y-4 w-full">
             <SidebarMenu/>
             <div className="block w-full">
-                <h1>Seja bem vindo</h1>
-
+                <h1 className={styles.titulo}>Seja Bem Vindo ao EFarma</h1>
+                <h2 className={styles.h2}>Gestão Inteligente de Medicamentos</h2>
             </div>
         </div>
     )
