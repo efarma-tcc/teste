@@ -51,8 +51,8 @@ export default function TableCadastros(){
   const endIndex = startIndex + rowsPerPage;
   const paginatedProducts = products.slice(startIndex, endIndex); // Slice products for current page
     return(
-        <div className="p-6 max-w-4xl mx-auto space-y-4">
-            <h1 className="text-3xl font-bold">Cadastros</h1>
+        <div className="p-6 max-w-4xl space-y-4">
+            <h1 className="title">Cadastros</h1>
 
             <div className="flex items-center justify-between">
                 <ProdutsFilters />
