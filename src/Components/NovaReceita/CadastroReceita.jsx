@@ -6,10 +6,8 @@ import styles from './CadastroReceita.module.css';
 const CadastroReceita = () => {
   return (
     <section className={styles.cadastroreceita}>
-        <div>
-            <Routes className={styles.formReceita}>
-                <Route path="/" element={<CadastroReceitaForm />}></Route>
-            </Routes>
+        <div className='mt-5'>
+            <CadastroReceitaForm />
         </div>
     </section>
   )

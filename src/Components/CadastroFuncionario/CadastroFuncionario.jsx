@@ -7,10 +7,8 @@ import styles from './CadastroFuncionario.module.css';
 const CadastroFuncionario = () => {
   return (
     <section className={styles.cadastrofuncionario}>
-      <div>
-        <Routes className={styles.formfuncionario}>
-        <Route path="/" element={<CadastroFuncionarioForm />}></Route>
-        </Routes>
+      <div className='mt-5'>
+        <CadastroFuncionarioForm />
       </div>
     </section>
   );

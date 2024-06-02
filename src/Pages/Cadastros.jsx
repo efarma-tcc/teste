@@ -3,6 +3,7 @@ import SidebarMenu from "../Components/Sidebar/index"
 import ModalPages from "@/Components/MoldalPages"
 import CadastroPaciente from "@/Components/CadastroPaciente/CadastroPaciente"
 import CadastroFuncionario from "@/Components/CadastroFuncionario/CadastroFuncionario"
+import TableCadastros from "@/Components/tables/Table-cadastros/TableCadastros"
 
 
 export default function Cadastros(){
@@ -18,7 +19,6 @@ export default function Cadastros(){
                                 <TabsTrigger value="listaPessoas">Lista</TabsTrigger>
                             </TabsList>
                         </ModalPages>
-
                         <TabsContent value='paciente'>
                             <CadastroPaciente/>
                         </TabsContent>
@@ -26,10 +26,8 @@ export default function Cadastros(){
                             <CadastroFuncionario/>
                         </TabsContent>
                         <TabsContent value='listaPessoas'>
-                            <h1>CODIGO DO listaPessoas</h1>
+                            <TableCadastros/>
                         </TabsContent>
-
-
                     </Tabs>
             </div>
         </div>

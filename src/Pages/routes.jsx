@@ -4,6 +4,8 @@ import {
 
 import Home from "./Home";
 import Login from "../Components/Login/Login";
+import Cadastros from "./Cadastros";
+import Receita from "./Receitas";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +13,15 @@ export const router = createBrowserRouter([
       element: <Login/>,
     },
     {
-        path: "/h",
+        path: "/home",
         element : <Home />
+    },
+    {
+        path: "/cadastros",
+        element : <Cadastros />
+    },
+    {
+        path: "/receitas",
+        element : <Receita />
     },
 ]);

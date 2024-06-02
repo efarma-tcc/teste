@@ -15,7 +15,7 @@ const CadastroFuncionarioForm = () => {
   return (
     <section className="animeLeft">
         <div className={styles.containerTitulo}>
-            <h1 className="title">Cadastro de Funcionários</h1>
+            <h1 className="title text-3xl font-semibold m-2 ">Cadastro de Funcionários</h1>
         </div>
       
       <form className={styles.formcontainerF}>
