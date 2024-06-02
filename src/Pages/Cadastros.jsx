@@ -27,6 +27,7 @@ export default function Cadastros(){
                             <CadastroFuncionario/>
                         </TabsContent>
                         <TabsContent value='listaPessoas'>
+                            <h1 className="title">Cadastros</h1>
                             <TableCadastros/>
                         </TabsContent>
                     </Tabs>

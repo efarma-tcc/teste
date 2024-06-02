@@ -1,3 +1,4 @@
+import TableCadastros from "@/Components/tables/Table-cadastros/TableCadastros"
 import SidebarMenu from "../Components/Sidebar/index"
 
 
@@ -6,7 +7,8 @@ export default function Page1(){
         <div className="flex mx-auto space-y-4 w-full">
             <SidebarMenu/>
             <div className="block w-full">
-                <h1 className="text-5xl font-smibold">SEJA BEM VINDO</h1>
+                <h1>Seja bem vindo</h1>
+
             </div>
         </div>
     )

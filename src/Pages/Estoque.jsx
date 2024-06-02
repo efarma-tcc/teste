@@ -24,6 +24,7 @@ export default function Estoque(){
                             </TabsList>
                         </ModalPages>
                         <TabsContent value='buscarReceita'>
+                            <h1 className="title">Buscar Receitas</h1>
                             <TableReceitas/>
                         </TabsContent>
                         <TabsContent value='receitaEncontrada'>
