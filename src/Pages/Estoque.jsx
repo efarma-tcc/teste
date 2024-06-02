@@ -1,5 +1,6 @@
 import CadastroRemedioEstoque from "@/Components/CadastroRemedioEstoque/CadastroRemedioEstoque";
 import CadastroRemedio from "@/Components/CadastroRemedios/CadastroRemedio";
+import CadastroSalas from "@/Components/CadastroSalas/CadastroSalas";
 import Button from "@/Components/Forms/Button";
 import ModalPages from "@/Components/MoldalPages";
 import SidebarMenu from "@/Components/Sidebar";
@@ -21,6 +22,7 @@ export default function Estoque(){
                                 <TabsTrigger value="addRemedio">Cadastrar Remédio</TabsTrigger>
                                 <TabsTrigger value="addRemedioEstoque">Adicionar Remédio ao Estoque</TabsTrigger>
                                 <TabsTrigger value="listaEstoque">Estoque</TabsTrigger>
+                                <TabsTrigger value="cadastroSala">Cadastro de Sala</TabsTrigger>
                             </TabsList>
                         </ModalPages>
                         <TabsContent value='buscarReceita'>
@@ -55,6 +57,9 @@ export default function Estoque(){
                         </TabsContent>
                         <TabsContent value='listaEstoque'>
                             <TableItensEstoque/>
+                        </TabsContent>
+                        <TabsContent value='cadastroSala'>
+                            <CadastroSalas />
                         </TabsContent>
                     </Tabs>
             </div>
