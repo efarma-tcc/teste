@@ -10,6 +10,7 @@ import { PlusCircle} from 'lucide-react';
 import { ComboBoxResponsive } from './ComboboxNovoRemeido';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
+import TableItensReceita from '../tables/Table-itens-receita/TableItensReceita';
 
   const CadastroReceitaForm = () => {
 
@@ -76,6 +77,10 @@ import { Input } from '../ui/input';
 
                 </Dialog>
 
+
+            </div>
+            <div>
+                <TableItensReceita />
             </div>
             <div className={styles.formrowRe}>
                 <InputLe label="Local" type="text" name="local" {...local}></InputLe>

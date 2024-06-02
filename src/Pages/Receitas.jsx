@@ -1,3 +1,4 @@
+import CadastroRemedio from "@/Components/CadastroRemedios/CadastroRemedio";
 import ModalPages from "@/Components/MoldalPages";
 import CadastroReceita from "@/Components/NovaReceita/CadastroReceita";
 import SidebarMenu from "@/Components/Sidebar";
@@ -14,6 +15,7 @@ export default function Receitas(){
                             <TabsList className='ml-6 p-6'>
                                 <TabsTrigger value="paciente">Nova Receita</TabsTrigger>
                                 <TabsTrigger value="funcionarios">Lista de Receitas</TabsTrigger>
+                                <TabsTrigger value="addRemedio">Cadastrar Remédio</TabsTrigger>
                                 
                             </TabsList>
                         </ModalPages>
@@ -22,6 +24,9 @@ export default function Receitas(){
                         </TabsContent>
                         <TabsContent value='funcionarios'>
                             <TableReceitas />
+                        </TabsContent>
+                        <TabsContent value='addRemedio'>
+                            <CadastroRemedio/>
                         </TabsContent>
                     </Tabs>
             </div>
