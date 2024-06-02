@@ -4,6 +4,7 @@ import ModalPages from "@/Components/MoldalPages"
 import CadastroPaciente from "@/Components/CadastroPaciente/CadastroPaciente"
 import CadastroFuncionario from "@/Components/CadastroFuncionario/CadastroFuncionario"
 import TableCadastros from "@/Components/tables/Table-cadastros/TableCadastros"
+import '../App.css';
 
 
 export default function Cadastros(){

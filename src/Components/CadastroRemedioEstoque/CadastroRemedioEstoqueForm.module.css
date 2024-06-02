@@ -1,14 +1,11 @@
-.containerTituloE{
-    text-align: center;
-}
 
 .formContainerE{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 8 px;
+    gap: 8px;
     max-width: 600px; 
-    margin: 0 auto;
+    margin: 0;
     padding: 16px;
 }
 

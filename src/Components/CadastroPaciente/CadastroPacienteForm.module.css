@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
 
-.containerTituloP{
-    text-align: center;
-}
-
 .formcontainerP{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 8 px;
+    gap: 8px;
     max-width: 600px; 
-    margin: 0 auto;
+    margin: 0;
     padding: 16px;
 }
 

@@ -17,7 +17,6 @@ import { Input } from '../ui/input';
     const cpfR = useForm();
     const telefoneR = useForm();
     const nomeMedico = useForm();
-    const descricaoReceita = useForm();
     const local = useForm();
     const assinatura = useForm();
     const dataPrescricao = useForm();
@@ -38,7 +37,6 @@ import { Input } from '../ui/input';
                 <InputLe label="Nome do Médico" type="text" name="nomeMedico" {...nomeMedico}></InputLe>
                 <InputLe label="CRM do Médico" type="number" name="crm"></InputLe>
             </div>
-                <InputLe label="Descrição da Receita" type="text-area" name="descricaoReceita" {...descricaoReceita}></InputLe>
 
             <div className='mb-5'>
                 <Dialog>

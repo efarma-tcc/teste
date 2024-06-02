@@ -2,14 +2,10 @@
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 8 px;
-    max-width: 600px; 
-    margin: 0 auto;
+    gap: 8px;
+    max-width: 1000px; 
+    margin: 0;
     padding: 16px;
-}
-
-.containerTituloRe{
-    text-align: center;
 }
 
 .formrowRe{
