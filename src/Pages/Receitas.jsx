@@ -23,6 +23,7 @@ export default function Receitas(){
                             <CadastroReceita/>
                         </TabsContent>
                         <TabsContent value='funcionarios'>
+                            <h1 className="title">Cadastros</h1>
                             <TableReceitas />
                         </TabsContent>
                         <TabsContent value='addRemedio'>
