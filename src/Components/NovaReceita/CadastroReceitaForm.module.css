@@ -13,3 +13,7 @@
     display: flex;
     gap: 20px;
 }
+
+.inputNome{
+    width: 500px;
+}

@@ -11,6 +11,7 @@ import { ComboBoxResponsive } from './ComboboxNovoRemeido';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import TableItensReceita from '../tables/Table-itens-receita/TableItensReceita';
+import Input2 from '../Forms/Input2';
 
   const CadastroReceitaForm = () => {
 
@@ -30,12 +31,12 @@ import TableItensReceita from '../tables/Table-itens-receita/TableItensReceita';
         </div>
         <form className={styles.formContainerRe}>
             <div className={styles.formrowRe}>
-                <InputLe label="Nome do Paciente" type="text" name="nomePacienteR" {...nomePacienteR}></InputLe>
+                <Input2 label="Nome do Paciente" type="text" name="nomePacienteR" {...nomePacienteR}></Input2>
                 <InputLe label="CPF do Paciente" type="number" name="cpfR" {...cpfR}></InputLe>
                 <InputLe label="Telefone do Paciente" type="number" name="telefoneR" {...telefoneR}></InputLe>
             </div>
             <div className={styles.formrowRe}>
-                <InputLe label="Nome do Médico" type="text" name="nomeMedico" {...nomeMedico}></InputLe>
+                <Input2 label="Nome do Médico" type="text" name="nomeMedico" {...nomeMedico}></Input2>
                 <InputLe label="CRM do Médico" type="number" name="crm"></InputLe>
             </div>
 
@@ -81,8 +82,8 @@ import TableItensReceita from '../tables/Table-itens-receita/TableItensReceita';
                 <TableItensReceita />
             </div>
             <div className={styles.formrowRe}>
-                <InputLe label="Local" type="text" name="local" {...local}></InputLe>
-                <InputLe label="Data" type="date" name="dataPrescricao" {...dataPrescricao}></InputLe>
+                <Input2 label="Local" type="text" name="local" {...local}></Input2>
+                <InputLe label="Assinatura" type="text" name="assinatura" {...assinatura}></InputLe>
             </div>
             <ButtonGreen>Cadastrar nova Receita</ButtonGreen>
         </form>
