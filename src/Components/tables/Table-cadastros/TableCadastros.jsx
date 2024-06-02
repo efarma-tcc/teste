@@ -53,7 +53,6 @@ export default function TableCadastros(){
     return(
         <div className="p-6 max-w-4xl space-y-4">
     
-
             <div className="flex items-center justify-between">
                 <ProdutsFilters />
             </div>
