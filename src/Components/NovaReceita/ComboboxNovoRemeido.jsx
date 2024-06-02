@@ -17,6 +17,9 @@ const statuses = [
   { value: "remedio3", label: "Remédio 03" },
   { value: "remedio4", label: "Remédio 04" },
   { value: "remedio5", label: "Remédio 05" },
+  { value: "remedio6", label: "Remédio 06" },
+  { value: "remedio7", label: "Remédio 07" },
+
 ];
 
 export function ComboBoxResponsive() {
