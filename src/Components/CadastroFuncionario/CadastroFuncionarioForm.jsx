@@ -3,6 +3,7 @@ import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import useForm from '../../Hooks/useForm';
 import styles from './CadastroFuncionarioForm.module.css';
+import Input2 from '../Forms/Input2';
 
 const CadastroFuncionarioForm = () => {
     const nomeFuncionario = useForm();
@@ -10,6 +11,8 @@ const CadastroFuncionarioForm = () => {
     const dataNascimento = useForm();
     const telefone = useForm();
     const email = useForm();
+    const senhaGenerica = useForm();
+    const crm = useForm();
     const [select, setSelect] = React.useState('');
     
   return (
@@ -27,15 +30,20 @@ const CadastroFuncionarioForm = () => {
         </div>
         <Input label="E-mail" type="email" name="email" {...email}/>
         <p>Cargo</p>
-        <select className={styles.select} value={select} onChange={({target}) => setSelect(target.value)}>
-            <option disabled value="">Selecione</option>
-            <option value="medico">Médico</option>
-            <option value="paciente">Paciente</option>
-            <option value="estoquista">Estoquista</option>
-            <option value="enfermeiro">Enfermeiro</option>
-            <option value="farmaceutico">Farmacêutico </option>
-            <option value="administrador">Administrador</option>
-        </select>
+          <select className={styles.select} value={select} onChange={({target}) => setSelect(target.value)}>
+              <option disabled value="">Selecione</option>
+              <option value="medico">Médico</option>
+              <option value="paciente">Paciente</option>
+              <option value="estoquista">Estoquista</option>
+              <option value="enfermeiro">Enfermeiro</option>
+              <option value="farmaceutico">Farmacêutico </option>
+              <option value="administrador">Administrador</option>
+          </select>
+        <div className={styles.formrow1}>
+            <Input label="CRM (para médicos)" type="text" name="crm" {...crm}/>  
+            <Input label="Senha Genérica (CPF Funcionário)" type="text" name="senhaGenerica" {...senhaGenerica}/>
+            
+        </div>
         <Button>Cadastrar Funcionário</Button>
       </form>
     </section>

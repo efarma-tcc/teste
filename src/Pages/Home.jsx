@@ -7,15 +7,14 @@ export default function Page1(){
     return (
         <div className="flex mx-auto space-y-4 w-full">
             <SidebarMenu/>
-            <div className="block w-full">
+            <div className="block w-full text-center">
                 <h1 className={styles.titulo}>Seja Bem Vindo ao EFarma</h1>
                 <h2 className={styles.h2}>Gestão Inteligente de Medicamentos</h2>
+                <img className={styles.imagem} src="src/Assets/redux.png" alt="Descrição da Imagem"/>
             </div>
         </div>
     )
 }
-
-
 
 
 

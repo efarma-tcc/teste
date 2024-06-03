@@ -6,12 +6,13 @@ import styles from './CadastroReceitaForm.module.css';
 import { Button } from '../ui/button'
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog';
 import { PlusCircle} from 'lucide-react';
-
 import { ComboBoxResponsive } from './ComboboxNovoRemeido';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import TableItensReceita from '../tables/Table-itens-receita/TableItensReceita';
 import Input2 from '../Forms/Input2';
+import Input4 from '../Forms/Input4';
+import Button1 from '../Forms/Button1';
 
   const CadastroReceitaForm = () => {
 
@@ -37,7 +38,7 @@ import Input2 from '../Forms/Input2';
             </div>
             <div className={styles.formrowRe}>
                 <Input2 label="Nome do Médico" type="text" name="nomeMedico" {...nomeMedico}></Input2>
-                <InputLe label="CRM do Médico" type="number" name="crm"></InputLe>
+                <Input4 label="CRM do Médico" type="number" name="crm"></Input4>
             </div>
 
             <div className='mb-5'>
@@ -83,9 +84,9 @@ import Input2 from '../Forms/Input2';
             </div>
             <div className={styles.formrowRe}>
                 <Input2 label="Local" type="text" name="local" {...local}></Input2>
-                <InputLe label="Assinatura" type="text" name="assinatura" {...assinatura}></InputLe>
+                <Input4 label="Assinatura" type="text" name="assinatura" {...assinatura}></Input4>
             </div>
-            <ButtonGreen>Cadastrar nova Receita</ButtonGreen>
+            <Button1>Cadastrar nova Receita</Button1>
         </form>
     </section>
   );

@@ -12,3 +12,12 @@
     color: gray;
     font-size: 30px;
 }
+
+.imagem{
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    max-width: 100%;
+    width: 230px;
+    height: auto;
+}
