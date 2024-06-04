@@ -10,7 +10,7 @@ const CadastroSalasForm = () => {
   return (
     <section className="animeLeft">
         <div>
-            <h1 className="title text-3xl font-semibold m-2 ">Cadastro de Salas</h1>
+            <h1 className="title2 text-3xl font-semibold m-2 ">Cadastro de Salas</h1>
         </div>
         <form className={styles.formcontainerS}>
             <Input label="Nome ou Número da sala" type="text" name="nomeSala" {...nomeSala}/>

@@ -4,6 +4,7 @@ import CadastroReceita from "@/Components/NovaReceita/CadastroReceita";
 import SidebarMenu from "@/Components/Sidebar";
 import TableReceitas from "@/Components/tables/Table-receitas/TableReceitas";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import style from './Navbar.module.css'
 
 export default function Receitas(){
     return (
@@ -13,9 +14,9 @@ export default function Receitas(){
                     <Tabs defaultValue='paciente' className='ml-5'>
                         <ModalPages>
                             <TabsList className='ml-6 p-6'>
-                                <TabsTrigger value="paciente">Nova Receita</TabsTrigger>
-                                <TabsTrigger value="funcionarios">Lista de Receitas</TabsTrigger>
-                                <TabsTrigger value="addRemedio">Cadastrar Remédio</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="paciente">Nova Receita</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="funcionarios">Lista de Receitas</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="addRemedio">Cadastrar Remédio</TabsTrigger>
                                 
                             </TabsList>
                         </ModalPages>
@@ -23,7 +24,7 @@ export default function Receitas(){
                             <CadastroReceita/>
                         </TabsContent>
                         <TabsContent value='funcionarios'>
-                            <h1 className="title">Cadastros</h1>
+                            <h1 className="title2">Cadastros</h1>
                             <TableReceitas />
                         </TabsContent>
                         <TabsContent value='addRemedio'>

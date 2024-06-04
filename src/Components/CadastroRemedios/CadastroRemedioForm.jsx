@@ -12,7 +12,7 @@ const CadastroRemedioForm = () => {
   return (
     <section className="animeLeft">
         <div className={styles.containerTituloR}>
-            <h1 className="title">Cadastro de Remédios</h1>
+            <h1 className="title2">Cadastro de Remédios</h1>
         </div>
         <form className={styles.formcontainerR}>
         <Input label="Nome do Remédio" type="text" name="nomeRemedio" {...nomeRemedio}></Input>

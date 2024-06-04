@@ -16,7 +16,7 @@ const CadastroPacienteForm = () => {
   return (
     <section className="animeLeft">
         <div className={styles.containerTituloP}>
-            <h1 className="title text-3xl font-semibold m-2">Cadastro de Pacientes</h1>
+            <h1 className="title2 text-3xl font-semibold m-2">Cadastro de Pacientes</h1>
         </div>
 
         <form className={styles.formcontainerP}>

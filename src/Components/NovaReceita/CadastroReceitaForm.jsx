@@ -28,7 +28,7 @@ import Button1 from '../Forms/Button1';
   return (
     <section className="animeLeft">
         <div className={styles.containerTituloRe}>
-            <h1 className="title">Nova Receita</h1>
+            <h1 className="title2">Nova Receita</h1>
         </div>
         <form className={styles.formContainerRe}>
             <div className={styles.formrowRe}>

@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import { getItensReceitaEstoque } from "@/Components/data/lista-itens-receita-estoque";
 import FiltrosReceitaEstoque from "./FiltrosReceitaEstoque";
 
-
-
-
 export default function TableReceitaEstoque(){
 
   const [products, setProducts] = useState([]); // State for fetched products

@@ -8,6 +8,7 @@ import TableItensEstoque from "@/Components/tables/Table-itens-estoque/TableIten
 import TableReceitaEstoque from "@/Components/tables/Table-receitas-estoque/TableReceitaEstoque";
 import TableReceitas from "@/Components/tables/Table-receitas/TableReceitas";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
+import style from './Navbar.module.css';
 
 export default function Estoque(){
     return (
@@ -17,16 +18,16 @@ export default function Estoque(){
                     <Tabs defaultValue='buscarReceita' className='ml-5'>
                         <ModalPages>
                             <TabsList className='ml-6 p-6'>
-                                <TabsTrigger value="buscarReceita">Buscar Receita</TabsTrigger>
-                                <TabsTrigger value="receitaEncontrada">Receita Encontrada teste</TabsTrigger>
-                                <TabsTrigger value="addRemedio">Cadastrar Remédio</TabsTrigger>
-                                <TabsTrigger value="addRemedioEstoque">Adicionar Remédio ao Estoque</TabsTrigger>
-                                <TabsTrigger value="listaEstoque">Estoque</TabsTrigger>
-                                <TabsTrigger value="cadastroSala">Cadastro de Sala</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="buscarReceita">Buscar Receita</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="receitaEncontrada">Receita Encontrada teste</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="addRemedio">Cadastrar Remédio</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="addRemedioEstoque">Adicionar Remédio ao Estoque</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="listaEstoque">Estoque</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="cadastroSala">Cadastro de Sala</TabsTrigger>
                             </TabsList>
                         </ModalPages>
                         <TabsContent value='buscarReceita'>
-                            <h1 className="title">Buscar Receitas</h1>
+                            <h1 className="title2">Buscar Receitas</h1>
                             <TableReceitas/>
                         </TabsContent>
                         <TabsContent value='receitaEncontrada'>
@@ -34,12 +35,12 @@ export default function Estoque(){
                 
                             <div className="flex w-full mt-10">
                                 <div className="w-full">
-                                    <h1 className="title">Itens Sobre a Mesa</h1>
+                                    <h1 className="title2">Itens Sobre a Mesa</h1>
                                     <TableReceitaEstoque/>
                                 </div>
 
                                 <div className="w-full">
-                                    <h1 className="title">Itens Receita</h1>
+                                    <h1 className="title2">Itens Receita</h1>
                                     <TableReceitaEstoque/>
                                 </div>
                             </div>

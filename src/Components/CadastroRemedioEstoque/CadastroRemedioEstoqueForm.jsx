@@ -16,7 +16,7 @@ const CadastroRemedioEstoqueForm = () => {
   return (
     <section className="animeLeft">
         <div className={styles.containerTituloE}>
-            <h1 className="title">Cadastro de Remédio no Estoque</h1>
+            <h1 className="title2">Cadastro de Remédio no Estoque</h1>
         </div>
         <form className={styles.formContainerE}>
         <Input label="ID do Remédio" type="number" name="idRemedio" {...idRemedio}></Input>

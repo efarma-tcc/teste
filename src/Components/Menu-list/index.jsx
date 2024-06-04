@@ -24,7 +24,7 @@ export default function MenuList() {
       theme={'light'}
       className={style.menuBar}
     >
-      <MenuItem key="home" icon={<HomeOutlined />}>
+      <MenuItem key="home" className={style.textsidebar} icon={<HomeOutlined />}>
         <Link to="/home">Home</Link>
       </MenuItem>
       <MenuItem key="cadastros" icon={<TeamOutlined />}>

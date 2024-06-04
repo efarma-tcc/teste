@@ -5,6 +5,7 @@ import CadastroPaciente from "@/Components/CadastroPaciente/CadastroPaciente"
 import CadastroFuncionario from "@/Components/CadastroFuncionario/CadastroFuncionario"
 import TableCadastros from "@/Components/tables/Table-cadastros/TableCadastros"
 import '../App.css';
+import style from './Navbar.module.css';
 
 
 export default function Cadastros(){
@@ -15,9 +16,9 @@ export default function Cadastros(){
                     <Tabs defaultValue='paciente' className='ml-5'>
                         <ModalPages>
                             <TabsList className='ml-6 p-6'>
-                                <TabsTrigger value="paciente">Pacientes</TabsTrigger>
-                                <TabsTrigger value="funcionarios">Funcionarios</TabsTrigger>
-                                <TabsTrigger value="listaPessoas">Lista</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="paciente">Pacientes</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="funcionarios">Funcionarios</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="listaPessoas">Lista</TabsTrigger>
                             </TabsList>
                         </ModalPages>
                         <TabsContent value='paciente'>
@@ -27,7 +28,7 @@ export default function Cadastros(){
                             <CadastroFuncionario/>
                         </TabsContent>
                         <TabsContent value='listaPessoas'>
-                            <h1 className="title">Cadastros</h1>
+                            <h1 className="title2">Cadastros</h1>
                             <TableCadastros/>
                         </TabsContent>
                     </Tabs>
