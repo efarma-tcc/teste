@@ -20,12 +20,12 @@ const CadastroRemedioForm = () => {
         <form className={styles.formcontainerR}>
         <div className={styles.formrowR}>
           <Input4 label="Nome do Remédio" type="text" name="nomeRemedio" {...nomeRemedio}></Input4>
-
+          <Input label="Dosagem" type="number" name="dosagem" {...dosagem}></Input>
+          <Input label="Unidade de Medida" type="number" name="unimedida" {...unimedida}></Input>
         </div>
 
         <div className={styles.formrowR}>
-            <Input label="Dosagem" type="number" name="dosagem" {...dosagem}></Input>
-            <Input label="Unidade de Medida" type="number" name="unimedida" {...unimedida}></Input>
+
         </div>
         <Button1>Cadastrar Remédio</Button1>
         </form>

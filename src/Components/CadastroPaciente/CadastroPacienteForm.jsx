@@ -32,7 +32,6 @@ const CadastroPacienteForm = () => {
                 <Input label="Data Nascimento" type="date" name="dataNascimentoPaciente" {...dataNascimentoPaciente}></Input>
                 <Input label="Telefone" type="number" name="telefonePaciente" {...telefonePaciente}></Input>
             </div>
-
             <Input label="Observações" type="text" name="observacoes" {...observacoes}></Input>
             <Button1>Cadastrar Paciente</Button1>
         </form>

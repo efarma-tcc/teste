@@ -78,7 +78,7 @@ a{
 .title2{
   font-family: var(--type-second);
   line-height: 1;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: auto 2rem;
   position: relative;
   z-index: 1;
@@ -87,8 +87,8 @@ a{
 .title2::after{
   content: '';
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 0.9rem;
+  height: 0.8rem;
   background: #00ACAC;
   position: absolute;
   bottom: 5px;
