@@ -3,6 +3,9 @@ import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import useForm from '../../Hooks/useForm';
 import styles from './CadastroRemedioForm.module.css';
+import Input2 from '../Forms/Input2';
+import Button1 from '../Forms/Button1';
+import Input4 from '../Forms/Input4';
 
 const CadastroRemedioForm = () => {
     const nomeRemedio = useForm();
@@ -15,12 +18,16 @@ const CadastroRemedioForm = () => {
             <h1 className="title2">Cadastro de Remédios</h1>
         </div>
         <form className={styles.formcontainerR}>
-        <Input label="Nome do Remédio" type="text" name="nomeRemedio" {...nomeRemedio}></Input>
+        <div className={styles.formrowR}>
+          <Input4 label="Nome do Remédio" type="text" name="nomeRemedio" {...nomeRemedio}></Input4>
+
+        </div>
+
         <div className={styles.formrowR}>
             <Input label="Dosagem" type="number" name="dosagem" {...dosagem}></Input>
             <Input label="Unidade de Medida" type="number" name="unimedida" {...unimedida}></Input>
         </div>
-        <Button>Cadastrar Remédio</Button>
+        <Button1>Cadastrar Remédio</Button1>
         </form>
     </section>
   )

@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 600px; 
+    max-width: 1000px; 
     margin: auto 1rem;
     padding: 16px;
   }  
@@ -14,6 +14,7 @@
 .formrow{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .formrow1{
@@ -21,7 +22,9 @@
   gap: 105px;
 }
 
-.select{
+
+.select,
+.input{
   border: 1px, solid #F1F5F9;
   display: block;
   width: 100%;
@@ -34,7 +37,10 @@
   flex: 1;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+  box-sizing: border-box;
+  
 }
+
 
 .select:focus,
 .select:hover{
@@ -42,4 +48,8 @@
   border-color: #00ACAC;
   background: white;
   box-shadow: 0 0 0 1px #00cccc;
+}
+
+.label{
+  margin-bottom: -10px;
 }
