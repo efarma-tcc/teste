@@ -18,30 +18,33 @@ export default function MenuList() {
   }, [location]);
 
   return (
-    <Menu
-      onClick={handleClick}
-      selectedKeys={[current]}
-      theme={'light'}
-      className={style.menuBar}
-    >
-      <MenuItem key="home" className={style.textsidebar} icon={<HomeOutlined />}>
-        <Link to="/home">Home</Link>
-      </MenuItem>
-      <MenuItem key="cadastros" icon={<TeamOutlined />}>
-        <Link to="/cadastros">Cadastros</Link>
-      </MenuItem>
-      <MenuItem key="receitas" icon={<ReconciliationOutlined />}>
-        <Link to="/receitas">Receitas</Link>
-      </MenuItem>
-      <MenuItem key="estoque" icon={<DatabaseOutlined />}>
-      <Link to="/estoque">Estoque</Link>
-      </MenuItem>
-      <MenuItem key="configuracoes" icon={<SettingOutlined />}>
-        Configurações
-      </MenuItem>
-      <MenuItem key="sair" icon={<SettingOutlined />}>
-        Sair
-      </MenuItem>
-    </Menu>
+    <div className="mt-10">
+      <Menu
+        onClick={handleClick}
+        selectedKeys={[current]}
+        theme={'light'}
+        className={style.menuBar}
+      >
+        <MenuItem key="home" className={style.textsidebar} icon={<HomeOutlined />}>
+          <Link to="/home">Home</Link>
+        </MenuItem>
+        <MenuItem key="cadastros" icon={<TeamOutlined />}>
+          <Link to="/cadastros">Cadastros</Link>
+        </MenuItem>
+        <MenuItem key="receitas" icon={<ReconciliationOutlined />}>
+          <Link to="/receitas">Receitas</Link>
+        </MenuItem>
+        <MenuItem key="estoque" icon={<DatabaseOutlined />}>
+        <Link to="/estoque">Estoque</Link>
+        </MenuItem>
+        <MenuItem key="configuracoes" icon={<SettingOutlined />}>
+          Configurações
+        </MenuItem>
+        <MenuItem key="sair" icon={<SettingOutlined />}>
+          Sair
+        </MenuItem>
+      </Menu>
+
+    </div>
   );
 }

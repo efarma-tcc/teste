@@ -20,15 +20,7 @@ export default function SidebarMenu(){
                     trigger={null}
                     >
                     <LogoSideBar path="src\Assets\redux.png" theme="ligth"/>
-                    <div style={{display:"flex", color:"#000", justifyContent: collapsed? "center" : "end"}}>
-                        <Button 
-                            type='text' 
-                            icon= {collapsed ? <RiMenuFold2Line /> : <RiMenuUnfold2Line /> }
-                            className='toggle'
-                            onClick={() => setCollapsed(!collapsed)}
-
-                        />
-                    </div>
+                   
                     <MenuList darkTheme={'ligth'} />
 
                 </Sider>
