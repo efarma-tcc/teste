@@ -51,12 +51,6 @@ export default function TableReceitas(){
   const paginatedProducts = products.slice(startIndex, endIndex); // Slice products for current page
     return(
         <div className="p-6 max-w-4xl space-y-4">
-          
-
-            <div className="flex items-center justify-between">
-                <ProdutsFilters />
-            </div>
-
             <div className="border rounded-lg p-4">
                 <Table>
                 <TableHeader>
