@@ -8,7 +8,7 @@ export default function FiltroReceitas() {
         <form className="flex items-center gap-2 ml-7 mt-7">
             <Input3 label="Data Emissão:" id="data"/>
             <Input3 label="Nome:" id="name"/>
-            <Button type="submit" variant="secondary" >
+            <Button type="submit" variant="secondary" className="mt-2" >
               <Search className="w-4 h-4 mr-2"/>
               Filtrar Resultados
             </Button>
