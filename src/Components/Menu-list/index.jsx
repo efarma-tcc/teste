@@ -4,6 +4,7 @@ import style from "./index.module.css";
 import MenuItem from "antd/es/menu/MenuItem";
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
+import { LogOut } from "lucide-react";
 
 export default function MenuList() {
   const location = useLocation();
@@ -22,8 +23,8 @@ export default function MenuList() {
       <Menu
         onClick={handleClick}
         selectedKeys={[current]}
-        theme={'light'}
         className={style.menuBar}
+        style={{backgroundColor:'#F1F5F9'}}
       >
         <MenuItem key="home" className={style.textsidebar} icon={<HomeOutlined />}>
           <Link to="/home">Home</Link>
@@ -40,7 +41,7 @@ export default function MenuList() {
         <MenuItem key="configuracoes" icon={<SettingOutlined />}>
           Configurações
         </MenuItem>
-        <MenuItem key="sair" icon={<SettingOutlined />}>
+        <MenuItem key="sair" icon={<LogOut className="w-4"/>}>
           Sair
         </MenuItem>
       </Menu>

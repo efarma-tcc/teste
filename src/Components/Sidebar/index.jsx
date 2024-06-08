@@ -1,4 +1,4 @@
-import { Button, Layout, theme } from 'antd'
+import { Layout } from 'antd'
 import LogoSideBar from '../Logo-side-bar';
 import  style from "./index.module.css"
 import MenuList from '../Menu-list';
@@ -9,15 +9,19 @@ export default function SidebarMenu(){
 
     return(
             <>
+            
                 <Sider 
                     theme={'light'} 
                     className={style.sidebar}
                     trigger={null}
                     >
-                    <LogoSideBar path="src\Assets\redux.png" theme="ligth"/>
-                   
-                    <MenuList darkTheme={'ligth'} />
+
+                    <LogoSideBar path="src\Assets\redux.png"   />
+   
+                    <MenuList   />
                 </Sider>
+
+            
             </>
         )
 }

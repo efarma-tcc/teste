@@ -4,14 +4,14 @@
     justify-content: center;
     color: #fff;
     padding: 0px;
-    margin-top: 0px;
+    margin-top: 2rem;
     margin-bottom: 0px;
 }
 .dark{
     background-color: #af3737;
 }
 .ligth{
-    background-color: #fff;
+    background-color: #F1F5F9;
 }
 .logoIcon{
     width: 50px;
