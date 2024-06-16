@@ -7,6 +7,7 @@ import Login from "../Components/Login/Login";
 import Cadastros from "./Cadastros";
 import Receita from "./Receitas";
 import Estoque from "./Estoque";
+import Configuracoes from "./Configuracoes";
 
 export const router = createBrowserRouter([
     {
@@ -28,5 +29,9 @@ export const router = createBrowserRouter([
     {
         path: "/estoque",
         element : <Estoque/>
+    },
+    {
+        path: "/configuracoes",
+        element: <Configuracoes />
     },
 ]);

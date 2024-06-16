@@ -2,7 +2,7 @@
     margin-bottom: 1rem;
   }
   
-  .input2{
+  .input3{
     border: 1px solid #F1F5F9;
     display: block;
     width: 200px;
@@ -15,8 +15,8 @@
     flex: 1;
   }
   
-  .input2:focus,
-  .input2:hover{
+  .input3:focus,
+  .input3:hover{
     outline: none;
     border-color: #00ACAC;
     background: white;

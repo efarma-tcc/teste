@@ -7,6 +7,7 @@ import Input2 from '../Forms/Input2';
 import Input4 from '../Forms/Input4';
 import Button1 from '../Forms/Button1';
 import Input3 from '../Forms/Input3';
+import InputTw from '../Forms/InputTw';
 
 const CadastroFuncionarioForm = () => {
     const nomeFuncionario = useForm();
@@ -24,18 +25,32 @@ const CadastroFuncionarioForm = () => {
             <h1 className="title2 text-3xl font-semibold m-2 ">Cadastro de Funcionários</h1>
         </div>
       
+
+      
       <form className={styles.formcontainerF}>
-        <div className={styles.formrow}>
-          <Input2 label="Nome Completo" type="text" name="nomeFuncionario" {...nomeFuncionario}/>
-          <Input4 label="CPF" type="number" name="cpf" {...cpf}/>
+        <div className="flex gap-5">
+          <div className='w-full'>
+            <InputTw label="Nome Completo" type="text" name="nomeFuncionario" {...nomeFuncionario} className="w-full" />
+          </div>
+          <div className='w-4/12'>
+            <InputTw label="CPF" type="text" name="cpf" {...cpf} className="w-full" />
+          </div>
+
         </div>
-        <div className={styles.formrow}>
-          <Input2 label="E-mail" type="email" name="email" {...email}/>
-          <Input label="Data Nascimento" type="date" name="dataNascimento" {...dataNascimento}/>
-          <Input label="Telefone" type="number" name="telefone" {...telefone}/>
+        <div className="flex gap-5">
+          <div className='w-full'>
+            <InputTw label="E-mail" type="email" name="email" {...email} className="w-full" />
+          </div>
+          <div className='w-4/12'>
+            <InputTw label="Data Nascimento" type="date" name="dataNascimento" {...dataNascimento} className="w-full" />
+          </div>
+          <div className='w-4/12'>
+            <InputTw label="Telefone" type="number" name="telefone" {...telefone} className="w-full" />
+          </div>
         </div>
         <label htmlFor="cargoSelect" className={styles.label}>Cargo</label>
-        <div className={styles.formrow}>
+        <div className="flex gap-5">
+          <div className='w-3/4'>
             <select id="cargoSelect" className={styles.select} value={select} onChange={({target}) => setSelect(target.value)}>
                 <option disabled value="">Selecione</option>
                 <option value="medico">Médico</option>
@@ -45,10 +60,11 @@ const CadastroFuncionarioForm = () => {
                 <option value="farmaceutico">Farmacêutico </option>
                 <option value="administrador">Administrador</option>
             </select>
-            <Input4 label="CRM (para médicos)" className={styles.input} type="text" name="crm" {...crm}/>
+          </div>
+            <InputTw label="CRM (para médicos)" type="text" name="crm" {...crm} className="w-full" />
         </div>
         <div className={styles.formrow1}>  
-            <Input4 label="Senha Genérica (CPF Funcionário)" type="text" name="senhaGenerica" {...senhaGenerica}/>
+          <Input4 label="Senha Genérica (CPF Funcionário)" type="text" name="senhaGenerica" {...senhaGenerica}/>
             
         </div>
         <Button1>Cadastrar Funcionário</Button1>

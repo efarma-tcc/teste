@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Input.module.css';
+import { twMerge } from 'tailwind-merge';
 
-const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
+const Input = ({ label, type, name, value, onChange, error, onBlur,className }) => {
   return (
     <div className={styles.wrapper}>
       <label htmlFor={name} className={styles.label}>
@@ -10,7 +11,7 @@ const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
       <input
         id={name}
         name={name}
-        className={styles.input}
+        className={twMerge(styles.input,className)}
         type={type}
         value={value}
         onChange={onChange}

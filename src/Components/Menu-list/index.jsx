@@ -39,7 +39,7 @@ export default function MenuList() {
         <Link to="/estoque">Estoque</Link>
         </MenuItem>
         <MenuItem key="configuracoes" icon={<SettingOutlined />}>
-          Configurações
+          <Link to="/configuracoes">Configurações</Link>
         </MenuItem>
         <MenuItem key="sair" icon={<LogOut className="w-4"/>}>
           Sair

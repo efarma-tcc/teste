@@ -6,6 +6,8 @@ import styles from './CadastroPacienteForm.module.css';
 import Input2 from '../Forms/Input2';
 import Input4 from '../Forms/Input4';
 import Button1 from '../Forms/Button1';
+import InputTw from '../Forms/InputTw';
+import ButtonTw from '../Forms/ButtonTw';
 
 
 const CadastroPacienteForm = () => {
@@ -23,17 +25,32 @@ const CadastroPacienteForm = () => {
         </div>
 
         <form className={styles.formcontainerP}>
-            <div className={styles.formrowP}>
-                <Input2 label="Nome Completo do Paciente" type="text" name="nomePaciente" {...nomePaciente}></Input2>
-                <Input4 label="CPF" type="number" name="cpfPaciente" {...cpfPaciente}></Input4>
+            <div className="flex gap-5 ">
+                <div className='w-full'>
+                    <InputTw label="Nome Completo do Paciente" type="text" name="nomePaciente" {...nomePaciente} className="w-full" />
+                </div>
+                <div>
+                    <InputTw label="CPF" type="number" name="cpfPaciente" {...cpfPaciente} className="" />
+                </div>
             </div>
-            <div className={styles.formrowP}>
-                <Input2 label="E-mail" type="email" name="emailPaciente" {...emailPaciente}></Input2>
-                <Input label="Data Nascimento" type="date" name="dataNascimentoPaciente" {...dataNascimentoPaciente}></Input>
-                <Input label="Telefone" type="number" name="telefonePaciente" {...telefonePaciente}></Input>
+
+            <div className='flex gap-5'>
+                <div className='w-full'>
+                    <InputTw label="E-mail" type="text" name="email" {...emailPaciente} className="w-full" />
+                </div>
+                <div>
+                    <InputTw label="Data Nascimento" type="date" name="nomePaciente" {...dataNascimentoPaciente} className="" />
+                </div>
+                <div>
+                    <InputTw label="Telefone" type="text" name="nomePaciente" {...telefonePaciente} className="" />
+                </div>
             </div>
-            <Input label="Observações" type="text" name="observacoes" {...observacoes}></Input>
-            <Button1>Cadastrar Paciente</Button1>
+            <InputTw label="Observações" type="text" name="observacoes" {...observacoes} className="w-full" />
+            <div className='flex justify-center'>
+                <ButtonTw className="w-64" >Cadastrar Paciente</ButtonTw>
+
+            </div>
+            
         </form>
     </section>
   );

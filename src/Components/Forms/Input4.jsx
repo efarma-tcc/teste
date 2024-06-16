@@ -10,7 +10,7 @@ const Input4 = ({ label, type, name, value, onChange, error, onBlur }) => {
         <input
             id={name}
             name={name}
-            className={styles.input2}
+            className={styles.input4}
             type={type}
             value={value}
             onChange={onChange}

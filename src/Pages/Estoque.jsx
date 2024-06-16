@@ -15,22 +15,25 @@ export default function Estoque(){
     return (
         <div className="flex mx-auto space-y-4 w-full">
             <SidebarMenu/>
-            <div className="block w-full">
+            <div className="block">
                     <Tabs defaultValue='buscarReceita' className='ml-5'>
-                        <ModalPages>
-                            <TabsList className='ml-6 p-6'>
+                        <ModalPages >
+                            <TabsList className='p-4 '>
                                 <TabsTrigger className={style.textoNav} value="buscarReceita">Buscar Receita</TabsTrigger>
-                                <TabsTrigger className={style.textoNav} value="receitaEncontrada">Receita Encontrada teste</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="receitaEncontrada">Receita Encontrada</TabsTrigger>
                                 <TabsTrigger className={style.textoNav} value="addRemedio">Cadastrar Remédio</TabsTrigger>
-                                <TabsTrigger className={style.textoNav} value="addRemedioEstoque">Adicionar Remédio ao Estoque</TabsTrigger>
+                                <TabsTrigger className={style.textoNav} value="addRemedioEstoque">Add Remédio ao Estoque</TabsTrigger>
                                 <TabsTrigger className={style.textoNav} value="listaEstoque">Estoque</TabsTrigger>
                                 <TabsTrigger className={style.textoNav} value="cadastroSala">Cadastro de Sala</TabsTrigger>
                             </TabsList>
                         </ModalPages>
                         <TabsContent value='buscarReceita'>
                             <h1 className="title2">Buscar Receitas</h1> 
-                            <FiltroReceitaEstoque/>
-                            <TableReceitas/>
+                            <div className="w-3/4">
+                                <FiltroReceitaEstoque/>
+                                <TableReceitas/>
+
+                            </div>
                         </TabsContent>
                         <TabsContent value='receitaEncontrada'>
                            
