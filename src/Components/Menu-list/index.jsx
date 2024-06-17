@@ -38,9 +38,6 @@ export default function MenuList() {
         <MenuItem key="estoque" icon={<DatabaseOutlined />}>
         <Link to="/estoque">Estoque</Link>
         </MenuItem>
-        <MenuItem key="configuracoes" icon={<SettingOutlined />}>
-          <Link to="/configuracoes">Configurações</Link>
-        </MenuItem>
         <MenuItem key="sair" icon={<LogOut className="w-4"/>}>
           Sair
         </MenuItem>
