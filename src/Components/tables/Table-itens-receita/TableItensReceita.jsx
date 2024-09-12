@@ -37,8 +37,6 @@ export default function TableItensReceita(){
                     <TableHead>Remédio</TableHead>
                     <TableHead>Qtd</TableHead>
                     <TableHead>Descrição</TableHead>
-                    <TableHead>Retirar</TableHead>
-                    <TableHead>Em estoque</TableHead>
                 </TableHeader>
 
                 <TableBody>
@@ -53,8 +51,6 @@ export default function TableItensReceita(){
                                 <TableCell>{product.name}</TableCell>
                                 <TableCell>{product.qtd}</TableCell>
                                 <TableCell>{product.descricao}</TableCell>
-                                <TableCell><Input className="w-10"/></TableCell>
-                                <TableCell className='flex justify-center'><CheckCircle2/></TableCell>
                             </TableRow>
                     ))
                     ) : (

@@ -1,14 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import useForm from '../../Hooks/useForm';
 import styles from './CadastroPacienteForm.module.css';
-import Input2 from '../Forms/Input2';
-import Input4 from '../Forms/Input4';
-import Button1 from '../Forms/Button1';
 import InputTw from '../Forms/InputTw';
-import ButtonTw from '../Forms/ButtonTw';
-
+import Button1 from '../Forms/Button1';
+import ValidaCPF from '../validaCPF';
 
 const CadastroPacienteForm = () => {
     const nomePaciente = useForm();
@@ -17,6 +14,17 @@ const CadastroPacienteForm = () => {
     const telefonePaciente = useForm();
     const emailPaciente = useForm();
     const observacoes = useForm();
+    const [cpfError, setCpfError] = useState('');
+
+    const handleCPFChange = (event) => {    
+        const value = event.target.value;
+        cpfPaciente.onChange(event); 
+        if (!ValidaCPF(value)) {
+          setCpfError('CPF inválido');
+        } else {
+          setCpfError(''); 
+        }
+    };
 
   return (
     <section className="animeLeft">
@@ -30,7 +38,8 @@ const CadastroPacienteForm = () => {
                     <InputTw label="Nome Completo do Paciente" type="text" name="nomePaciente" {...nomePaciente} className="w-full" />
                 </div>
                 <div>
-                    <InputTw label="CPF" type="number" name="cpfPaciente" {...cpfPaciente} className="" />
+                    <InputTw label="CPF" type="text" name="cpfPaciente" {...cpfPaciente} onChange={handleCPFChange} className="" />
+                    {cpfError && <p style={{ color: 'red' }}>{cpfError}</p>}
                 </div>
             </div>
 
@@ -39,15 +48,15 @@ const CadastroPacienteForm = () => {
                     <InputTw label="E-mail" type="text" name="email" {...emailPaciente} className="w-full" />
                 </div>
                 <div>
-                    <InputTw label="Data Nascimento" type="date" name="nomePaciente" {...dataNascimentoPaciente} className="" />
+                    <InputTw label="Data Nascimento" type="date" name="dataNascimentoPaciente" {...dataNascimentoPaciente} className="" />
                 </div>
                 <div>
-                    <InputTw label="Telefone" type="text" name="nomePaciente" {...telefonePaciente} className="" />
+                    <InputTw label="Telefone" type="text" name="telefonePaciente" {...telefonePaciente} className="" />
                 </div>
             </div>
             <InputTw label="Observações" type="text" name="observacoes" {...observacoes} className="w-full" />
             <div className='flex justify-center'>
-                <ButtonTw className="w-64" >Cadastrar Paciente</ButtonTw>
+                <Button1>Cadastrar Paciente</Button1>
 
             </div>
             
@@ -56,8 +65,4 @@ const CadastroPacienteForm = () => {
   );
 };
 
-export default CadastroPacienteForm
-
-
-    
-
+export default CadastroPacienteForm;
