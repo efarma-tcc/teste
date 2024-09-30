@@ -15,6 +15,7 @@ const CadastroRemedioEstoqueForm = () => {
     const uniMedidaRemedio = useForm();
     const quantidadeRemedio = useForm();
     const sala = useForm();
+    const [select, setSelect] = React.useState('');
 
   return (
     <section className="animeLeft">
@@ -22,15 +23,17 @@ const CadastroRemedioEstoqueForm = () => {
             <h1 className="title2">Cadastro de Remédio no Estoque</h1>
         </div>
         <form className={styles.formContainerE}>
-            <div className={styles.formrowE}>
-                <Input label="ID do Remédio" type="number" name="idRemedio" {...idRemedio}></Input>
-                <Input4 label="Nome do Remédio" type="text" name="nomeRemedioE" {...nomeRemedioE}></Input4>
-                <Input label="Dosagem" type="number" name="dosagemRemedio" {...dosagemRemedio}></Input>
-            </div>
+            <label htmlFor="remedioSelect" className={styles.label}>Remédio</label>
+                <div className='w-3/4'>
+                    <select  id="remedioSelect" className={styles.select1} value={select} onChange={({target}) => setSelect(target.value)}>
+                        <option disabled value="">Selecione</option>
+                        <option value="medico">Ibuprofeno - 100mg</option>
+                        <option value="medico">Tylenol - 750mg</option>
+                    </select>
+                </div> 
+            
             <div className={styles.formrowE}>
                 <Input label="Validade" type="date" name="validadeRemedio" {...validadeRemedio}></Input>
-                
-                <Input label="Unidade de Medida" type="number" name="unimedidaRemedio" {...uniMedidaRemedio}></Input>
                 <Input label="Quantidade" type="number" name="quantidadeRemedio" {...quantidadeRemedio}></Input>
                 <Input label="Sala" type="text" name="sala" {...sala}></Input>
             </div>

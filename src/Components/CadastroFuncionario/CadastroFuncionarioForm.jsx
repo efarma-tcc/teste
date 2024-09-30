@@ -21,6 +21,7 @@ const CadastroFuncionarioForm = () => {
     const crm = useForm();
     const [select, setSelect] = React.useState('');
     const [cpfError, setCpfError] = useState('');
+    const emailFiscal = useForm();
 
     const handleCPFChange = (event) => {
       const value = event.target.value;
@@ -74,9 +75,13 @@ const CadastroFuncionarioForm = () => {
           </div>
             <InputTw label="CRM (para médicos)" type="text" name="crm" {...crm} className="w-full" />
         </div>
-        <div className={styles.formrow1}>  
-          <Input4 label="Senha Genérica (CPF Funcionário)" type="text" name="senhaGenerica" {...senhaGenerica}/>
-            
+        <div className="flex gap-5">
+          <div className='w-full'>
+            <InputTw label="E-mail do Fiscal" type="text" name="emailFiscal" {...emailFiscal} className="w-full" />
+          </div>
+          <div className='w-4/12'>
+            <InputTw label="Senha Genérica (CPF Funcionário)" type="text" name="cpf" {...senhaGenerica} className="w-full" />
+          </div>
         </div>
         <Button1>Cadastrar Funcionário</Button1>
       </form>
