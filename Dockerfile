@@ -1,23 +1,27 @@
-# 1. Usar a imagem base do Node.js
+# Use uma imagem oficial do Node.js como base
 FROM node:18-alpine
 
-# 2. Definir o diretório de trabalho dentro do contêiner
+# Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
 
-# 3. Copiar o arquivo package.json e package-lock.json
-COPY ./package*.json ./
+# Copie o package.json e o package-lock.json para o diretório de trabalho
+COPY package*.json ./
 
-# 4. Instalar as dependências do projeto (incluindo Vite)
+# Instale as dependências
 RUN npm install
 
-# 5. Copiar o restante dos arquivos do projeto para o contêiner
+# Copie todo o projeto para o diretório de trabalho
 COPY . .
 
-# 6. Construir a aplicação
-RUN npx vite build
+# Construa o projeto React
+RUN npm run build
 
-# 7. Expor a porta 3000 (ou a porta que você estiver usando)
+# Instale uma ferramenta de servidor para servir os arquivos estáticos
+RUN npm install -g serve
+
+# Defina a porta que o contêiner vai expor
 EXPOSE 3000
 
-# 8. Comando para iniciar o servidor de produção
-CMD ["npm", "run", "serve"]
+# Comando para rodar o servidor com a build
+CMD ["serve", "-s", "build", "-l", "3000", "--single"]
+
