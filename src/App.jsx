@@ -6,6 +6,7 @@ import Login from './Components/Login/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CadastroReceita from './Components/NovaReceita/CadastroReceita';
 import Home from './Pages/Home';
+import LoginForm from './Components/Login/LoginForm';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Header />
         <main className="AppBody">
           <Routes>
-            <Route path="/" element={<Login />} /> 
+            <Route path="/" element={<LoginForm />} /> 
             <Route path="/home/*" element={<Home />} />
           </Routes>
         </main>

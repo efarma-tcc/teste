@@ -1,7 +1,7 @@
 export async function getCadastros(){
 
     let cadastros = [
-        {id: '1', name: 'Nome A', cpf:'000.000.000-00' , tipo:'Estoquista' },
+        {id: '1', name: 'Nome Aa', cpf:'000.000.000-00' , tipo:'Estoquista' },
         {id: '2', name: 'Nome B', cpf:'000.000.000-00' , tipo:'Paciente'},
         {id: '3', name: 'Nome C', cpf:'000.000.000-00' , tipo:'Estoquista'},
         {id: '4', name: 'Nome D', cpf:'000.000.000-00' , tipo:'Paciente'},
