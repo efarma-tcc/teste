@@ -1,27 +1,26 @@
-# Use uma imagem oficial do Node.js como base
-FROM node:18-alpine
+# Usar uma imagem Node.js como base
+FROM node:latest
 
-# Defina o diretório de trabalho dentro do contêiner
+# Defina o diretório de trabalho
 WORKDIR /app
 
-# Copie o package.json e o package-lock.json para o diretório de trabalho
-COPY package*.json ./
+# Copie os arquivos de pacotes
+COPY package.json package-lock.json ./
 
 # Instale as dependências
 RUN npm install
 
-# Copie todo o projeto para o diretório de trabalho
+# Copie o restante dos arquivos do projeto
 COPY . .
 
-# Construa o projeto React
+# Construa o projeto
 RUN npm run build
 
-# Instale uma ferramenta de servidor para servir os arquivos estáticos
+# Instale um servidor para servir o build (como serve)
 RUN npm install -g serve
 
-# Defina a porta que o contêiner vai expor
+# Exponha a porta que o servidor irá usar
 EXPOSE 3000
 
-# Comando para rodar o servidor com a build
-CMD ["serve", "-s", "build", "-l", "3000", "--single"]
-
+# Comando para iniciar o servidor
+CMD ["serve", "-s", "dist"]
